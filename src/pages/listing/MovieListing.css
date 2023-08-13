@@ -1,0 +1,48 @@
+.listing_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.movie_list_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.img_tag{
+    width: 13rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    position: relative;
+}
+.movie_card{
+    width: 13rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 0.5rem;
+    height: 26rem;
+}
+.movie_info_div{
+position: relative;
+bottom: 5rem;
+background-color: white;
+}
+.info_para{
+    margin-top: -0.5rem;
+    line-height: 1rem;
+    font-size: smaller;
+}
+.btn_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 0.25rem;
+}
+button:hover{
+    background-color: #3b82f6;
+    cursor: pointer;
+    border: transparent;
+}

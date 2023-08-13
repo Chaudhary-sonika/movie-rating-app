@@ -1,0 +1,15 @@
+.header_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   padding-left: 2rem;
+   padding-right: 2rem;
+    background-color: black;
+    color: white;
+}
+.link_tag{
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}

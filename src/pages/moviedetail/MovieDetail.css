@@ -1,0 +1,25 @@
+.detai_div_card{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    width: 60%;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 20%;
+    
+    background-color: white;
+    border-radius: 1rem;
+}
+.img_tag-detail{
+    width: 15rem;
+}
+.info_div_detailPage{
+    width: 30rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+.btn_div_detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
