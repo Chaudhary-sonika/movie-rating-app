@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 import { useMovie } from "../../contexts/MovieContext"
 
 export const StarredMovie=()=>{
-    const {state, dispatch} = useMovie();
+    const { dispatch} = useMovie();
     const navigate = useNavigate();
     const starredData = JSON.parse(localStorage.getItem("Starred"));
     console.log(starredData);
