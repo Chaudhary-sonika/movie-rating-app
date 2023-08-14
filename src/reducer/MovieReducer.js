@@ -53,6 +53,19 @@ export const MovieReducer = (state, action) => {
       localStorage.setItem("Starred", JSON.stringify(newData));
       return { ...state, starData: newData };
 
+    case "unstar_btn":
+      const localDataFnc = (key) => {
+        const data = localStorage.getItem(key);
+        return data ? JSON.parse(data) : [];
+      };
+      const existingDatas = localDataFnc("Starred");
+      //    console.log(existingData, "ab");
+      const removeData = existingDatas?.filter(
+        (data) => data.id !== action.payload
+      );
+
+      localStorage.setItem("Starred", JSON.stringify(removeData));
+      return { ...state, starData: removeData };
     default:
       return state;
   }

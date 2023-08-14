@@ -63,8 +63,8 @@ export const MovieListing =()=>{
                 {state?.Data.map((item)=>{
                     const isStarred = starredData?.find((data)=>data.id===item.id)
                     return (
-                    <div key={item.id} className="movie_card" onClick={()=>navigate(`/moviedetail/${item.id}`)}>
-                      <img src={item?.imageURL} alt="movie_pic" className="img_tag"/>
+                    <div key={item.id} className="movie_card">
+                      <img src={item?.imageURL} alt="movie_pic" className="img_tag" onClick={()=>navigate(`/moviedetail/${item.id}`)}/>
                       <div className="movie_info_div"> 
                         <h3>{item.title}</h3> 
                         <p className="info_para">{item.summary}</p>
