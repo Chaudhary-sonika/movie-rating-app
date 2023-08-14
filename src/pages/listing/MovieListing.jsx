@@ -61,7 +61,7 @@ export const MovieListing =()=>{
             </div>
             <div className="movie_list_div">
                 {state?.Data.map((item)=>{
-                    const isStarred = starredData.find((data)=>data.id===item.id)
+                    const isStarred = starredData?.find((data)=>data.id===item.id)
                     return (
                     <div key={item.id} className="movie_card" onClick={()=>navigate(`/moviedetail/${item.id}`)}>
                       <img src={item?.imageURL} alt="movie_pic" className="img_tag"/>
